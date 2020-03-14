@@ -1,0 +1,117 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "verify logindetails with valid credentials",
+        "description": "",
+        "id": "verifying-adactin-hotel-details;verify-logindetails-with-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 269771,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.afterclass(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 15295899532,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on hotel page",
+            "match": {
+              "location": "loginpagepom.user_is_on_hotel_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 11094273185,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enter details",
+            "match": {
+              "location": "loginpagepom.user_enter_details(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password",
+                  "Location",
+                  "Hotels",
+                  "Room Type",
+                  "Number of Rooms",
+                  "CheckInDate",
+                  "CheckOutDate",
+                  "Adults per Room",
+                  "Children per Room",
+                  "First Name",
+                  "Last Name",
+                  "Billing Address",
+                  "Credit Card No",
+                  "Credit Card Type",
+                  "Expiry Date",
+                  "Expiry Year",
+                  "CVV Number"
+                ]
+              },
+              {
+                "cells": [
+                  "VetriVetri",
+                  "vetri.1104",
+                  "London",
+                  "Hotel Sunshine",
+                  "Super Deluxe",
+                  "4-Five",
+                  "02/03/2020",
+                  "03/03/2020",
+                  "2 - Two",
+                  "2 - fTwo",
+                  "vetri",
+                  "Vj",
+                  "Pondicherry",
+                  "1234567890123456",
+                  "VISA",
+                  "April",
+                  "2021",
+                  "123"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#order_no\"}\n  (Session info: chrome\u003d80.0.3987.132)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027VETRI-PC\u0027, ip: \u0027192.168.43.48\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027x86\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_241\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\\Users\\Vetri\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51930}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: b239e21cea61562e0f5bdf3d5cfe6e92\n*** Element info: {Using\u003did, value\u003dorder_no}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat com.pomloginpage.loginpagepom.user_should_verify_the_message(loginpagepom.java:95)\r\n\tat ✽.user should verify the message(src/test/resources/Feature/login.feature:8)\r\n",
+              "duration": 10268775343,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "user should verify the message",
+            "match": {
+              "location": "loginpagepom.user_should_verify_the_message()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Verifying adactin hotel details",
+    "description": "",
+    "id": "verifying-adactin-hotel-details",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Feature/login.feature",
+    "tags": []
+  }
+]
